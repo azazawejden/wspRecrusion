@@ -1,4 +1,5 @@
-ALGORITHM Is-palindrome
+FUNCTION Is-palindrome(word:STRING) : BOOLEAN
+VAR
 VAR
     word : STRING
     ch-Left : CHAR
@@ -20,5 +21,5 @@ BEGIN
         word:=palindrome
     END_IF
 
-    
+    RETURN value ;
 END
