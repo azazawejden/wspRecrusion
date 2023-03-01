@@ -1,25 +1,14 @@
-FUNCTION Is-palindrome(word:STRING) : BOOLEAN
+FUNCTION palindrome(mot:STRING) : BOOLEAN
 VAR
-VAR
-    word : STRING
-    ch-Left : CHAR
-    ch-Right : CHAR
-    ch-enFIN : CHAR
+resultat:BOOLEAN
 BEGIN
-
-    write(word)
-    read(word)
-    IF (ch-Left==ch-Right OR ch-Right==ch-Left) THEN
-        IF (ch-enFIN are equality) THEN
-            write(we test the rest of the word)
-        ELSE
-            write(we stop)
-        END_IF
+    IF (mot.length<=1) THEN
+        RETURN true
     END_IF
-
-    IF (word==vide OR word=="single caractere") THEN
-        word:=palindrome
+    IF (mot[0]<>mot[mot.length]) THEN
+        RETURN false
     END_IF
-
-    RETURN value ;
+    mot:=mot[1,mot.length-1]
+    relultat:=palindrome (mot)
+    RETURN palindrome
 END
