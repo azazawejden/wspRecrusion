@@ -17,7 +17,7 @@ BEGIN
         END_IF
     END_IF
 
-    IF (word)== OR word=="single caractere" THEN
+    IF (word==vide OR word=="single caractere") THEN
         word:=palindrome
     END_IF
 
